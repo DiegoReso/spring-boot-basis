@@ -6,6 +6,7 @@ import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.time.Instant;
 
 @Getter
 @Setter
@@ -22,8 +23,10 @@ public class CategoryDTO implements Serializable {
     public CategoryDTO(Category entity){
         this.id = entity.getId();
         this.name = entity.getName();
+        this.created_At = entity.getCreated_At();
     }
 
     private Long id;
     private String name;
+    private Instant created_At;
 }
