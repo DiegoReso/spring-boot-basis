@@ -13,6 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
+
 public class CategoryDTO implements Serializable {
 
     @Serial
